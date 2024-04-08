@@ -8,5 +8,6 @@
         echo "<a href='?categorie=$nomcat'>$nomcat</a>";
     }
     ?>
+
 </div>
 
