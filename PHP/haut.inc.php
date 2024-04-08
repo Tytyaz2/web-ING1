@@ -6,3 +6,7 @@
 </head>
 <body>
 <h1>TANK</h1>
+
+<?php
+session_start();
+?>
