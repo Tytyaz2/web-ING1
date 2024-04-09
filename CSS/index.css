@@ -3,3 +3,24 @@
     color: red;
     background-color: antiquewhite;
 }
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: red;
+}
+
+tr:first-child {
+    background-color: #ddd;
+}
