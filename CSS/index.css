@@ -1,3 +1,4 @@
+
 #TANK {
     text-align: center;
     color: red;
@@ -9,18 +10,20 @@ table {
 }
 
 td {
-    padding: 8px;
-    border: 1px solid #ddd;
+    padding: 15px;
+    border: 1px solid deeppink;
 }
 
 td:first-child {
     font-weight: bold;
+
+
 }
 
 tr:nth-child(even) {
-    background-color: red;
+    background-color: pink;
 }
 
 tr:first-child {
-    background-color: #ddd;
+    background-color: lightpink;
 }
