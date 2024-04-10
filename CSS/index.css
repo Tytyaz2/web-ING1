@@ -1,4 +1,10 @@
 
+#TANK {
+    text-align: center;
+    color: red;
+    background-color: antiquewhite;
+}
+
 #submit_inscription {
     border: none;
     display: block;
