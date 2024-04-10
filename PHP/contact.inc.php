@@ -1,3 +1,5 @@
+
+<link rel="stylesheet" href="../CSS/validation_contact.css">
 <script src="../JS/validation_contact.js"></script>
 <h2>Contact</h2>
 <form id="contactForm" action="php/verif_contact.php" method="post">
