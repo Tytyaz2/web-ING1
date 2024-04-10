@@ -3,19 +3,40 @@ document.addEventListener("DOMContentLoaded", function() {
         var nom = document.getElementById("nomcontact").value.trim();
         var email = document.getElementById("emailcontact").value.trim();
         var message = document.getElementById("messagecontact").value.trim();
+        var nomError = document.getElementById("nomError");
+        var emailError = document.getElementById("emailError");
+        var messageError = document.getElementById("messageError");
 
-        if (!nom ) {
-            alert("Veuillez remplir tous les champs.");
+        nomError.textContent = "";
+        emailError.textContent = "";
+        messageError.textContent = "";
+
+        if (!nom) {
+            nomError.textContent = "Veuillez saisir un nom.";
+            document.getElementById("nomcontact").classList.add('invalid');
             event.preventDefault();
-        } else if ( !email ) {
-            alert("Veuillez remplir tous les champs.");
-            event.preventDefault();
-        } if (!message) {
-            alert("Veuillez remplir tous les champs.");
+        } else {
+            document.getElementById("nomcontact").classList.remove('invalid');
+        }
+
+        if (!email) {
+            emailError.textContent = "Veuillez saisir un e-mail.";
+            document.getElementById("emailcontact").classList.add('invalid');
             event.preventDefault();
         } else if (!validateEmail(email)) {
-            alert("Veuillez saisir une adresse e-mail valide.");
+            emailError.textContent = "Veuillez saisir une adresse e-mail valide.";
+            document.getElementById("emailcontact").classList.add('invalid');
             event.preventDefault();
+        } else {
+            document.getElementById("emailcontact").classList.remove('invalid');
+        }
+
+        if (!message) {
+            messageError.textContent = "Veuillez saisir un message.";
+            document.getElementById("messagecontact").classList.add('invalid');
+            event.preventDefault();
+        } else {
+            document.getElementById("messagecontact").classList.remove('invalid');
         }
     });
 
