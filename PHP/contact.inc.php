@@ -2,7 +2,7 @@
 <script src="../JS/validation_contact.js"></script>
 <h2>Contact</h2>
 <?php
-
+//si le serveur reçoit des informations qui ne conviennent pas
 if (isset($_GET['error']) && $_GET['error'] == 'formcontactinvalide'):
     echo "<p>Le serveur n'a pas pu gerer votre demande.</p>";
 endif;
