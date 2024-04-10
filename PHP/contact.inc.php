@@ -7,6 +7,7 @@ if (isset($_GET['error']) && $_GET['error'] == 'formcontactinvalide'):
     echo "<p>Le serveur n'a pas pu gerer votre demande.</p>";
 endif;
 ?>
+<!--- formulaire de contact qui est envoyer à verif_contact.php --->
 <form id="contactForm" method="post" action="../PHP/verif_contact.php">
     <div>
         <label for="nomcontact">Nom :</label>
