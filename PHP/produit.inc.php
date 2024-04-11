@@ -1,7 +1,6 @@
 <?php
 
 if (isset($_GET['categorie'])){
-    echo "<p>qdsfqf</p>";
     try {
         $nomcategorie = $_GET['categorie'];
         $dbh = new PDO('mysql:host=127.0.0.1;port=3306;dbname=product', 'root', "");
@@ -11,9 +10,9 @@ if (isset($_GET['categorie'])){
         $dbh->query(' CREATE TABLE produit ( 
 					id INT PRIMARY KEY NOT NULL, 
 					nom VARCHAR(255),
-					sock INT,
+					stock INT,
 					description VARCHAR(500),
-					prix INT,
+					prix FLOAT,
 					type VARCHAR(255)
 				);');
 

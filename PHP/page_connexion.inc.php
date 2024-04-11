@@ -1,4 +1,4 @@
-
+<link rel="stylesheet" href="../CSS/form_connexion.css">
 <div id="connexion">
     <?php
     //si la session existe on n'affiche pas la connexion puis affichage de chaque message selon le message d'erreur

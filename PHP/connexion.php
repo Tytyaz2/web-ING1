@@ -22,7 +22,7 @@ session_start();
                 exit;
             }
         }
-        header("Location: ../index.php?error=mailexistepas");
+        header("Location: ../page_inscription.php?error=mailexistepas");
         exit;
     }
 ?>

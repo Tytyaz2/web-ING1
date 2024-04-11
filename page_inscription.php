@@ -1,6 +1,7 @@
 <?php
 //la session est initialisé dedans
 include "PHP/haut.inc.php";
+include "PHP/menu.inc.php";
 //corps de la page
 if (!isset($_SESSION['username'])) {
     if (isset($_GET['error']) && $_GET['error'] == 'mailexistepas') {
@@ -11,6 +12,9 @@ if (!isset($_SESSION['username'])) {
         include "PHP/form_inscription.inc.php";
     } else if (isset($_GET['error']) && $_GET['error'] == 'password') {
         echo "<p>les mots de passe ne sont pas identiques.</p>";
+        include "PHP/form_inscription.inc.php";
+    } else {
+        echo "<p>Créer vous un compte.</p>";
         include "PHP/form_inscription.inc.php";
     }
 }
