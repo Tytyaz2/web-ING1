@@ -41,7 +41,7 @@ try {
     echo 'Une erreur s\'est produite lors de l\'envoi de l\'e-mail : ', $mail->ErrorInfo;
 }
 
-    header("Location: ../index.php");
+
     exit();
 }
 ?>
