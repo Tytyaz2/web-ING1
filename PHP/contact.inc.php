@@ -8,7 +8,7 @@ if (isset($_GET['error']) && $_GET['error'] == 'formcontactinvalide'):
 endif;
 ?>
 <!--- formulaire de contact qui est envoyer à verif_contact.php --->
-<form id="contactForm" method="post" action="../PHP/verif_contact.php">
+<form id="contactForm" method="post" action="../web-ing2/PHP/verif_contact.php">
     <div>
         <label for="nomcontact">Nom :</label>
         <input type="text" id="nomcontact" name="nom">
