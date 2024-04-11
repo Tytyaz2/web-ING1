@@ -1,0 +1,9 @@
+#menu {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    padding: 5%;
+}

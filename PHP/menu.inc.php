@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../CSS/menu.css">
 <div id="menu">
 
     <?php
