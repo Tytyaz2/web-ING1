@@ -1,8 +1,10 @@
 
 #TANK {
     text-align: center;
-    color: red;
-    background-color: antiquewhite;
+    color: #ff0a00;
+    background-color: transparent;
+    font-family: "Courier New", serif;
+    letter-spacing : 2px;
 }
 
 #submit_inscription {
