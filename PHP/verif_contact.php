@@ -16,21 +16,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
 // Créer une instance de PHPMailer
-$mail = new PHPMailer(true);
+$mail = new PHPMailer();
 
 try {
     // Paramètres SMTP
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'tankpomme@gmail.com';
+    $mail->Username = 'tankpomme9@gmail.com';
     $mail->Password = 'tankpomme1234';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
     // Paramètres de l'e-mail
-    $mail->setFrom('tankpomme@gmail.com', 'tankpomme');
-    $mail->addAddress('gabrielbrossat@gmail.com', 'Gabriel');
+    $mail->setFrom('tankpomme9@gmail.com', 'tankpomme');
+    $mail->addAddress('pillotpier@cy-tech.fr', 'Pierre');
     $mail->Subject = 'Sujet de l\'e-mail';
     $mail->Body = 'Salut, cest pour te dire que ton abonnement pornhub est permie pense a le reprendre sinon tu vas tennuyer la nuit tous seul';
 
