@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../CSS/index.css">
 </head>
 <body>
-<h1 id="TANK">POMME STORE</h1>
+<h1 id="TANK">POMMME STORE</h1>
 
 <?php
 session_start();
