@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="../CSS/haut.css">
 </head>
 <body>
-<h1 id="TANK">POMMME STORE</h1>
+<h1 id="TANK"><a href="../web-ING2/index.php" >POMMME STORE</a></h1>
 
-<?php   
+<?php
 session_start();
 ?>

@@ -1,9 +1,17 @@
 #menu {
     text-align: center;
+    background: brown;
 }
 
-a {
+#menu a {
     text-decoration: none;
     color: #000000;
-    padding: 5%;
+    padding-left:5.5% ;
+    padding-right: 5.5%;
+    background: greenyellow;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    margin-left: 2vw;
+    border: 2px solid black;
 }
+

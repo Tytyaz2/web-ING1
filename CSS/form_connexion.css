@@ -1,5 +1,11 @@
 #connexion {
     float: right;
-    margin-top: -5vh ;
+    display: flex;
+    margin-top: -6vh;
 }
 
+#connexion p {
+    margin-right: -19vw;
+    float: right;
+    margin-top: -2vh;
+}

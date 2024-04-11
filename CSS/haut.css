@@ -1,7 +1,18 @@
 
+body {
+    margin: auto;
+}
 #TANK {
     text-align: center;
     color: red;
     background-color: antiquewhite;
+    padding: 2%;
+    margin: auto;
+    font-size: 5vh;
     weight: 100%;
 }
+a {
+    text-decoration: none;
+}
+
+
