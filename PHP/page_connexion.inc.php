@@ -1,6 +1,7 @@
 
 <div id="connexion">
     <?php
+    //si la session existe on n'affiche pas la connexion puis affichage de chaque message selon le message d'erreur
     if (!isset($_SESSION['username'])) {
         if (isset($_GET['error']) && $_GET['error'] == 'mailexistepas') {
             echo "<p>Vous n'avez pas de compte, veuillez en créer un.</p>";

@@ -5,9 +5,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST["message"];
 
     if (!$nom || !$email || !$message || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: ../web-ING2/index.php?error=formcontactinvalide");
+        header("Location: ../index.php?error=formcontactinvalide");
         exit();
     }
+
     $to = "martinssoa@cy-tech.fr";
     $subject = "Nouveau message de $nom";
     $body = "Nom: $nom\n";
