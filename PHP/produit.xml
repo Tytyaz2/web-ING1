@@ -1,6 +1,6 @@
 <categories>
     <categorie>
-        <nom>Categorie1</nom>
+        <nom>Telephone</nom>
         <produits>
             <produit>
                 <nom>Produit 1.1</nom>
@@ -25,7 +25,7 @@
         </produits>
     </categorie>
     <categorie>
-        <nom>Categorie2</nom>
+        <nom>Ordinateur</nom>
         <produits>
             <produit>
                 <nom>Produit 2.1</nom>
@@ -50,7 +50,7 @@
         </produits>
     </categorie>
     <categorie>
-        <nom>Categorie3</nom>
+        <nom>Accessoires</nom>
         <produits>
             <produit>
                 <nom>Produit 3.1</nom>

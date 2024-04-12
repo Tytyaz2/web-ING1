@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../CSS/menu.css">
 <div id="menu">
 
     <?php
@@ -7,7 +8,7 @@
         //obtenir le nom de chaque categorie
         $nomcat = $cat->nom;
         //ecrire dans lhtml le nom de la categorie et envoyer en GET la categorie
-        echo "<a href='?categorie=$nomcat'>$nomcat</a>";
+        echo "<a href='index.php?categorie=$nomcat'>$nomcat</a>";
     }
     ?>
 

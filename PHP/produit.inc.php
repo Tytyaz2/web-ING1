@@ -1,20 +1,31 @@
 <?php
 
-if (isset($_GET['categorie'])) {
-    $nomcategorie = $_GET['categorie'];
-    $xml = simplexml_load_file("PHP/produit.xml");
-    //naviguer dans chaque categorie
-    foreach ($xml->categorie as $categorie) {
-        //si la categorie correspond au nom passer dans L'URL
-        if ($categorie->nom == $nomcategorie) {
-            //pour chaque produit afficher ses infos dans un tableau
-            foreach ($categorie->produits->produit as $produit) {
-                echo '<table>';
-                echo '<tr><td>Nom : </td><td>' . $produit->nom . '</td></tr>';
-                echo '<tr><td>Prix : </td><td>' . $produit->prix . '</td></tr>';
-                echo '</table>';
-            }
-        }
+if (isset($_GET['categorie'])){
+    try {
+        $nomcategorie = $_GET['categorie'];
+        $dbh = new PDO('mysql:host=127.0.0.1;port=3306;dbname=product', 'root', "");
+        echo " connexion faite<br/>";
+        $dbh->query('DROP TABLE produit');
+
+        $dbh->query(' CREATE TABLE produit ( 
+					id INT PRIMARY KEY NOT NULL, 
+					nom VARCHAR(255),
+					stock INT,
+					description VARCHAR(500),
+					prix FLOAT,
+					type VARCHAR(255)
+				);');
+
+        $count = $dbh ->query("SELECT COUNT(type) FROM `produit` WHERE type = ('$nomcategorie')");
+        echo " <script>alert($count)</script>";
+        $dbh = null;
+    }
+
+    catch (PDOException $e) {
+        echo "Erreur: ".$e->getMessage()."<br/>" ;
+        die() ;
     }
 }
+
+
 ?>

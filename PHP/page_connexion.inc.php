@@ -1,20 +1,11 @@
-
+<link rel="stylesheet" href="../CSS/form_connexion.css">
 <div id="connexion">
     <?php
     //si la session existe on n'affiche pas la connexion puis affichage de chaque message selon le message d'erreur
     if (!isset($_SESSION['username'])) {
-        if (isset($_GET['error']) && $_GET['error'] == 'mailexistepas') {
-            echo "<p>Vous n'avez pas de compte, veuillez en créer un.</p>";
-            include "form_inscription.inc.php";
-        } else if (isset($_GET['error']) && $_GET['error'] == 'mailexiste') {
+        if (isset($_GET['error']) && $_GET['error'] == 'mailexiste') {
             echo "<p>Le mail existe deja veuillez vous connecter.</p>";
             include "form_connexion.inc.php";
-        } else if (isset($_GET['error']) && $_GET['error'] == 'utilisateurdejapris') {
-            echo "<p>L'utilisateur est déjà pris.</p>";
-            include "form_inscription.inc.php";
-        } else if (isset($_GET['error']) && $_GET['error'] == 'password') {
-                echo "<p>les mots de passe ne sont pas identiques.</p>";
-                include "form_inscription.inc.php";
         } else if (isset($_GET['error']) && $_GET['error'] == 'motdepasseincorrect') {
             echo "<p>Mot de passe incorrect.</p>";
             include "form_connexion.inc.php";
