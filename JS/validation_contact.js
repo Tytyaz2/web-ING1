@@ -3,11 +3,14 @@ document.addEventListener("DOMContentLoaded", function() {
         var nom = document.getElementById("nomcontact").value.trim();
         var email = document.getElementById("emailcontact").value.trim();
         var message = document.getElementById("messagecontact").value.trim();
+        var prenom = document.getElementById("prenomcontact").value.trim();
+        var prenomError = document.getElementById("prenomError");
         var nomError = document.getElementById("nomError");
         var emailError = document.getElementById("emailError");
         var messageError = document.getElementById("messageError");
 
         nomError.textContent = "";
+        prenomError.textContent = "";
         emailError.textContent = "";
         messageError.textContent = "";
 
@@ -37,6 +40,13 @@ document.addEventListener("DOMContentLoaded", function() {
             event.preventDefault();
         } else {
             document.getElementById("messagecontact").classList.remove('invalid');
+        }
+        if (!prenom){
+            prenomError.textContent = "Veuillez saisir un prenom.";
+            document.getElementById("prenomcontact").classList.add('invalid');
+            event.preventDefault();
+        } else {
+            document.getElementById("prenomcontact").classList.remove('invalid');
         }
     });
 
