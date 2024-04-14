@@ -23,7 +23,7 @@
             foreach ($types as $type) {
                 $nomType = $type['type']; // Assurez-vous que la clé correspond au nom de votre colonne dans la base de données
                 // Créer un lien pour chaque type
-                echo "<a id='$nomType' href='index.php?type=" . urlencode($nomType) . "'>" . htmlspecialchars($nomType) . "</a>";
+                echo "<a class ='bouton_menu' id='$nomType' href='index.php?type=" . urlencode($nomType) . "'>" . htmlspecialchars($nomType) . "</a>";
             }
         } else {
             echo "Aucun type trouvé.";

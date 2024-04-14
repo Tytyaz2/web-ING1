@@ -6,6 +6,6 @@
                 <input type="submit" id="submit_connexion" value="se connecter">
             </form>
             <form method="post" action="page_inscription.php">
-                <input type="submit" id="submit_inscription" value="inscription" >
+                <input type="submit" id="submit_inscription" value="inscription" placeholder="text">
             </form>
 </div>
