@@ -2,11 +2,7 @@
 <script src="../JS/validation_contact.js"></script>
 <h2>Contact</h2>
 <?php
-<<<<<<<<< Temporary merge branch 1
-//si le serveur reçoit des informations qui ne conviennent pas
-=========
 
->>>>>>>>> Temporary merge branch 2
 if (isset($_GET['error']) && $_GET['error'] == 'formcontactinvalide'):
     echo "<p>Le serveur n'a pas pu gerer votre demande.</p>";
 endif;
