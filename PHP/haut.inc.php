@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Tank</title>
-    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/haut.css">
 </head>
 <body>
-<h1 id="TANK">POMME STORE</h1>
+<h1 id="TANK"><a href="../web-ING2/index.php" >POMMME STORE</a></h1>
 
 <?php
 session_start();
