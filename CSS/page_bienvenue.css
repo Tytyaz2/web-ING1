@@ -1,24 +1,28 @@
 #container {
     position: relative;
+    width: 100%;
 }
 
 .biere-blonde, .biere-brune, .biere-blanche {
     position: absolute;
-    width: 100px; /* ajustez la taille selon vos besoins */
-    height: 100px; /* ajustez la taille selon vos besoins */
+    width: 140px; /* ajustez la taille selon vos besoins */
+    height: 525px; /* ajustez la taille selon vos besoins */
 }
 
 .biere-blonde {
     top: 100px; /* ajustez la position selon vos besoins */
-    left: 50px; /* ajustez la position selon vos besoins */
+    left: 320px; /* ajustez la position selon vos besoins */
+
 }
 
 .biere-brune {
-    top: 200px; /* ajustez la position selon vos besoins */
-    left: 200px; /* ajustez la position selon vos besoins */
+    top: 100px; /* ajustez la position selon vos besoins */
+    left: 580px; /* ajustez la position selon vos besoins */
+
 }
 
 .biere-blanche {
-    top: 300px; /* ajustez la position selon vos besoins */
-    left: 350px; /* ajustez la position selon vos besoins */
+    top: 100px; /* ajustez la position selon vos besoins */
+    left: 830px; /* ajustez la position selon vos besoins */
+
 }
