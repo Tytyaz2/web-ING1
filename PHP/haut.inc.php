@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<h1 id="TANK"><a href="../web-ING2/index.php" >POMME STORE</a></h1>
+<div id="TANK"><a href="../web-ING2/index.php" ><img src="../IMAGE/TitreSite.png"> </a></div>
 
 <?php
 session_start();
