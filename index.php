@@ -1,5 +1,3 @@
-
-
 <?php
 //la session est initialisé dedans
 include "php/haut.inc.php";
@@ -20,3 +18,4 @@ include "php/contact.inc.php";
 //copyright
 include "php/copyright.inc.php";
 ?>
+
