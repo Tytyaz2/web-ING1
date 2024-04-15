@@ -1,19 +1,14 @@
 <link rel="stylesheet" href="../CSS/menu.css">
-
     <?php
         try {
             // Créer l'objet PDO pour la connexion à la base de données
             $dbh = new PDO('mysql:host=127.0.0.1;port=3306;dbname=PommeStore', 'root', "");
-
             // Définir la requête SQL pour obtenir les types distincts
             $sql = "SELECT DISTINCT type FROM produit"; // Notez l'utilisation de backticks si nécessaire
-
             // Préparer la requête SQL
             $stmt = $dbh->prepare($sql);
-
             // Exécuter la requête
             $stmt->execute();
-
             // Récupérer tous les résultats
             $types = $stmt->fetchAll(PDO::FETCH_ASSOC);
             echo "<div id='menu'>";
@@ -53,7 +48,3 @@
             
         </div>';;
     ?>
-
-
-
-
