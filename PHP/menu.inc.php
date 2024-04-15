@@ -33,11 +33,24 @@
         }
         echo"<a class ='bouton_menu' id='contact' href='index.php?contact'>Contact</a></div>";
         echo '<script src="JS/index.js"></script>
-        <button id="bouton-menu">Menu</button>
+
+        <button  id="bouton-menu" class="btn">
+            <span class="icon">
+                <svg viewBox="0 0 175 80" width="40" height="40">
+                    <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                    <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                    <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                </svg>
+            </span>
+            <span class="text">MENU</span>
+        </button>
         <div id="menu1" class="menu-cache">
             <a href="index.php?categorie=Rose">Rose</a>
             <a href="index.php?categorie=bleu">Bleu</a>
             <a href="index.php?categorie=verte">Verte</a>
+            
+            
+            
         </div>';;
     ?>
 
