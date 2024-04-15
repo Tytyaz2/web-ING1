@@ -2,6 +2,7 @@
     float: right;
     display: flex;
     margin-top: -6vh;
+    width: 35vw;
 }
 
 #connexion p {
@@ -12,9 +13,8 @@
 
 #submit_connexion {
     border: 2px solid transparent;
-    width: 15em;
+    width: 7em;
     height: 2.5em;
-    padding-left: 0.8em;
     outline: none;
     overflow: hidden;
     background-color: #F3F3F3;
@@ -33,7 +33,7 @@
 
 #submit_inscription {
     border: 2px solid transparent;
-    width: 15em;
+    width: 7em;
     height: 2.5em;
     padding-left: 0.8em;
     outline: none;
