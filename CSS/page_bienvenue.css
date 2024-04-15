@@ -1,6 +1,8 @@
 #container {
+    image: url("../IMAGE/bar_image.png");
     position: relative;
     width: 100%;
+    z-index: 1;
 }
 
 .biere-blonde, .biere-brune, .biere-blanche {

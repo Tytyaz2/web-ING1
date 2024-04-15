@@ -1,59 +1,51 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-// Inclure le fichier autoload.php de Composer
-require 'vendor/autoload.php';
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $date_contact = $_POST["dateContact"];
     $nom = $_POST["nom"];
+    $prenom = $_POST["prenom"];
     $email = $_POST["email"];
+    $genre = $_POST["genre"];
+    $dateN = $_POST["dateDeNaissance"];
+    $metier = $_POST["metier"];
     $message = $_POST["message"];
-    //verifier si tous les champs sont entrés et que c'est bien une adresse email qui est rentré
+    $sujet = $_POST["sujet"];
+
+    // Vérification des champs et de l'e-mail
     if (!$nom || !$email || !$message || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: ../web-ING2/index.php?error=formcontactinvalide");
+        header("Location: ../index.php?error=formcontactinvalide");
         exit();
-    }
-<<<<<<<<< Temporary merge branch 1
+    } else {
+        // Inclusion du fichier autoload de PHPMailer
+        require '../vendor/autoload.php';
 
-// Créer une instance de PHPMailer
-    $mail = new PHPMailer(true);
-=========
-    $to = "martinssoa@cy-tech.fr";
-    $subject = "Nouveau message de $nom";
-    $body = "Nom: $nom\n";
-    $body .= "Email: $email\n";
-    $body .= "Message:\n$message\n";
-    $headers = "From: soares.flavio2002@gmail.com";
->>>>>>>>> Temporary merge branch 2
+        // Création d'une instance de PHPMailer
+        $mail = new PHPMailer\PHPMailer\PHPMailer();
 
-    try {
         // Paramètres SMTP
         $mail->isSMTP();
-        $mail->Host = 'smtp.example.com';
+        $mail->Host = 'smtp.gmail.com'; // Adresse du serveur SMTP
         $mail->SMTPAuth = true;
-        $mail->Username = 'votre_adresse_email@example.com';
-        $mail->Password = 'votre_mot_de_passe';
+        $mail->Username = 'tankpomme9@gmail.com'; // Votre adresse e-mail
+        $mail->Password = 'jhkm kyiz pqry vrrv'; // Votre mot de passe
         $mail->SMTPSecure = 'tls';
-        $mail->Port = 587;
+        $mail->Port = 587; // Port SMTP (587 est le port TLS)
 
-<<<<<<<<< Temporary merge branch 1
-=========
         // Paramètres de l'e-mail
-        $mail->setFrom('votre_adresse_email@example.com', 'Votre Nom');
-        $mail->addAddress('adresse_email_destinataire@example.com', 'Nom du destinataire');
-        $mail->Subject = 'Sujet de l\'e-mail';
-        $mail->Body = 'Contenu du message';
+        $mail->setFrom('tankpomme9@gmail.com', 'pommestore');
+        $mail->addAddress('soares.flavio2002@gmail.com', 'Mr Martins soares');
+        $mail->Subject = $sujet;
+        $mail->Body = $nom ." ". $prenom . " né le " . $dateN . " exerçant le métier de ".$metier." souhaite prendre contact avec vous le ". $date_contact . " en vous transmettant le message suivant : ".$message;
 
-        // Envoyer l'e-mail
-        $mail->send();
-        echo 'L\'e-mail a été envoyé avec succès.';
-    } catch (Exception $e) {
-        echo 'Une erreur s\'est produite lors de l\'envoi de l\'e-mail : ', $mail->ErrorInfo;
+        // Envoi de l'e-mail
+        if ($mail->send()) {
+            header("Location: ../index.php?mailenvoye");
+            exit();
+        } else {
+            echo 'Erreur lors de l\'envoi de l\'e-mail : ' . $mail->ErrorInfo;
+        }
     }
->>>>>>>>> Temporary merge branch 2
+} else {
     header("Location: ../index.php");
     exit();
-
 }
-header("Location: ../index.php");
 ?>
