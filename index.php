@@ -31,7 +31,16 @@ else if (!isset($_GET["categorie"])){
     //menu pour changer la page
     echo '<script src="JS/index.js"></script>
           <link rel="stylesheet" href="../CSS/menu.css">
-        <button id="bouton-menu">Menu</button>
+         <button  id="bouton-menu" class="btn">
+            <span class="icon">
+                <svg viewBox="0 0 175 80" width="40" height="40">
+                    <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                    <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                    <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                </svg>
+            </span>
+            <span class="text">MENU</span>
+        </button>
         <div id="menu1" class="menu-cache">
             <a href="index.php?categorie=Rose">Rose</a>
             <a href="index.php?categorie=bleu">Bleu</a>
