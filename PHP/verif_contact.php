@@ -36,6 +36,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
+<<<<<<<<< Temporary merge branch 1
+=========
         // Paramètres de l'e-mail
         $mail->setFrom('votre_adresse_email@example.com', 'Votre Nom');
         $mail->addAddress('adresse_email_destinataire@example.com', 'Nom du destinataire');
@@ -48,6 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } catch (Exception $e) {
         echo 'Une erreur s\'est produite lors de l\'envoi de l\'e-mail : ', $mail->ErrorInfo;
     }
+>>>>>>>>> Temporary merge branch 2
     header("Location: ../index.php");
     exit();
 
