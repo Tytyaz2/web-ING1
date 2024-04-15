@@ -8,5 +8,10 @@
         "email": "pillotpier@cy-tech.fr",
         "username": "Epsi574",
         "password": "$2y$10$FOgjw0GilRGYv1qQ7fafZuo9TgcY7faxlKRHJj3IHKCbQ.4bFFve6"
+    },
+    {
+        "email": null,
+        "username": null,
+        "password": "$2y$10$9IxthPLcSztSWSRbTvR1lOFWgeuh3rgShBkyaiV62fqqpNEYcwDlG"
     }
 ]

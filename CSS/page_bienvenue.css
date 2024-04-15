@@ -1,0 +1,28 @@
+#container {
+    position: relative;
+    width: 100%;
+}
+
+.biere-blonde, .biere-brune, .biere-blanche {
+    position: absolute;
+    width: 140px; /* ajustez la taille selon vos besoins */
+    height: 525px; /* ajustez la taille selon vos besoins */
+}
+
+.biere-blonde {
+    top: 100px; /* ajustez la position selon vos besoins */
+    left: 320px; /* ajustez la position selon vos besoins */
+
+}
+
+.biere-brune {
+    top: 100px; /* ajustez la position selon vos besoins */
+    left: 580px; /* ajustez la position selon vos besoins */
+
+}
+
+.biere-blanche {
+    top: 100px; /* ajustez la position selon vos besoins */
+    left: 830px; /* ajustez la position selon vos besoins */
+
+}

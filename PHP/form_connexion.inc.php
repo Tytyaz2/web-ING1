@@ -9,3 +9,4 @@
                 <input type="submit" id="submit_inscription" value="inscription" placeholder="text">
             </form>
 </div>
+
