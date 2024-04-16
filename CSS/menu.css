@@ -23,10 +23,10 @@
 }
 
 #Telephone {
-    margin-top: 10%;
+    margin-top: 20%;
     border: 2px solid transparent;
-    width: 15em;
-    height: 2.5em;
+    width: 5em;
+    height: 1.5em;
     padding-left: 0.8em;
     outline: none;
     overflow: hidden;
@@ -44,10 +44,10 @@
 }
 
 #Ordinateur {
-    margin-top: 40%;
+    margin-top: 90%;
     border: 2px solid transparent;
-    width: 15em;
-    height: 2.5em;
+    width: 5em;
+    height: 1.5em;
     padding-left: 0.8em;
     outline: none;
     overflow: hidden;
@@ -65,10 +65,10 @@
 }
 
 #Accessoires {
-    margin-top: 10%;
+    margin-top: 20%;
     border: 2px solid transparent;
-    width: 15em;
-    height: 2.5em;
+    width: 5em;
+    height: 1.5em;
     padding-left: 0.8em;
     outline: none;
     overflow: hidden;
@@ -86,7 +86,7 @@
 }
 
 #contact {
-    margin-top: 10%;
+    margin-top: 20%;
     border: 2px solid transparent;
     width: 5em;
     padding: 0.8em;
@@ -106,7 +106,7 @@
 
 .menu-cache {
     display: none;
-    background-color: #fff;
+    background-color: #007bff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     top: 50px; /* Ajustez cette valeur en fonction de la hauteur de votre barre de navigation */
     left: 0;
@@ -118,13 +118,13 @@
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: #333;
+    color: #f5f5f5;
 }
 
 #bouton-menu {
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #81b7d2;
+    color: #f5f5f5;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -132,4 +132,71 @@
     top: 10px; /* Ajustez cette valeur pour positionner le bouton */
     left: 10px; /* Ajustez cette valeur pour positionner le bouton */
     z-index: 999; /* Assurez-vous que le bouton apparaît au-dessus du contenu */
+}
+
+#menu1{
+    margin-top: 35px;
+    padding: 10px 35px;
+    background-color: #81b7d2;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    z-index: 999;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    background: #040f16;
+    color: #f5f5f5;
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+
+.btn .icon {
+    position: absolute;
+    height: 40px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.btn .text {
+    transform: translateX(45px);
+}
+
+.btn:hover .icon {
+    width: 135px;
+}
+
+.btn:hover .text {
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active .icon {
+    transform: scale(0.85);
 }
