@@ -1,0 +1,59 @@
+#container {
+    image: url("../IMAGE/bar_image.png");
+    text-align: center;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    height: auto; /* Ajustez la hauteur selon vos besoins */
+    overflow: hidden;
+}
+
+.biere-blonde, .biere-brune, .biere-blanche {
+    position: absolute;
+    width: 140px; /* ajustez la taille selon vos besoins */
+    height: 525px; /* ajustez la taille selon vos besoins */
+}
+
+.biere-blonde {
+    top: 100px; /* ajustez la position selon vos besoins */
+    left: 320px; /* ajustez la position selon vos besoins */
+
+}
+
+.biere-brune {
+    top: 100px; /* ajustez la position selon vos besoins */
+    left: 580px; /* ajustez la position selon vos besoins */
+
+}
+
+.biere-blanche {
+    top: 100px; /* ajustez la position selon vos besoins */
+    left: 830px; /* ajustez la position selon vos besoins */
+
+}
+
+
+
+#container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background-image: linear-gradient(to bottom, #5e17eb, transparent);
+}
+
+#container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Assure que l'image couvre toute la zone */
+}
+
+.biere-blonde,
+.biere-brune,
+.biere-blanche {
+    position: absolute;
+    /* Ajoutez les styles supplémentaires pour les liens si nécessaire */
+}

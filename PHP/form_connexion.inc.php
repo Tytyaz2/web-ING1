@@ -5,7 +5,8 @@
                 <label for="password"></label><input type="password" id="password" placeholder="password" name="password" required>
                 <input type="submit" id="submit_connexion" value="se connecter">
             </form>
-            <form method="post" action="page_inscription.php">
-                <input type="submit" id="submit_inscription" value="inscription" >
+            <form method="post" action="../web-ING2/index.php?forminscription">
+                <input type="submit" id="submit_inscription" value="inscription" placeholder="text">
             </form>
 </div>
+

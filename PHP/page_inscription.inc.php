@@ -1,7 +1,4 @@
 <?php
-//la session est initialisé dedans
-include "PHP/haut.inc.php";
-include "PHP/menu.inc.php";
 //corps de la page
 if (!isset($_SESSION['username'])) {
     if (isset($_GET['error']) && $_GET['error'] == 'mailexistepas') {

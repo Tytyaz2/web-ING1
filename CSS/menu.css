@@ -1,17 +1,135 @@
+
 #menu {
-    text-align: center;
-    background: brown;
+    background: rgb(218,242,220);
+    float :left;
+    height: 80vh;
+    width: 10em;
+
+}
+
+.bouton_menu{
+
+    display: block;
+
 }
 
 #menu a {
+    padding: 5%;
     text-decoration: none;
     color: #000000;
-    padding-left:5.5% ;
-    padding-right: 5.5%;
-    background: greenyellow;
-    padding-bottom: 1%;
-    padding-top: 1%;
+
     margin-left: 2vw;
-    border: 2px solid black;
+    border: 2px solid rgb(	180, 229, 184);
 }
 
+#Telephone {
+    margin-top: 10%;
+    border: 2px solid transparent;
+    width: 15em;
+    height: 2.5em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: rgb(218,242,220);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+
+#Telephone:hover,
+#Telephone:focus {
+    border: 2px solid rgb(	180, 229, 184);
+    box-shadow: 0px 0px 0px 7px rgb(218,242,220, 50%);
+    background-color: white;
+}
+
+#Ordinateur {
+    margin-top: 40%;
+    border: 2px solid transparent;
+    width: 15em;
+    height: 2.5em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: rgb(218,242,220);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+
+#Ordinateur:hover,
+#Ordinateur:focus {
+    border: 2px solid rgb(	180, 229, 184);
+    box-shadow: 0px 0px 0px 7px rgb(218,242,220, 50%);
+    background-color: white;
+}
+
+#Accessoires {
+    margin-top: 10%;
+    border: 2px solid transparent;
+    width: 15em;
+    height: 2.5em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: rgb(218,242,220);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+
+#Accessoires:hover,
+#Accessoires:focus {
+    border: 2px solid rgb(	180, 229, 184);
+    box-shadow: 0px 0px 0px 7px rgb(218,242,220, 50%);
+    background-color: white;
+}
+
+#contact {
+    margin-top: 10%;
+    border: 2px solid transparent;
+    width: 5em;
+    padding: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: rgb(218,242,220);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+#contact:hover,
+#contact:focus {
+    border: 2px solid rgb(	180, 229, 184);
+    box-shadow: 0px 0px 0px 7px rgb(218,242,220, 50%);
+    background-color: white;
+}
+
+.menu-cache {
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 50px; /* Ajustez cette valeur en fonction de la hauteur de votre barre de navigation */
+    left: 0;
+    z-index: 2;
+    position: fixed;
+}
+
+.menu-cache a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+#bouton-menu {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed; /* Le bouton reste fixe lorsque vous faites défiler */
+    top: 10px; /* Ajustez cette valeur pour positionner le bouton */
+    left: 10px; /* Ajustez cette valeur pour positionner le bouton */
+    z-index: 999; /* Assurez-vous que le bouton apparaît au-dessus du contenu */
+}

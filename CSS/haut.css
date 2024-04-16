@@ -4,15 +4,15 @@ body {
 }
 #TANK {
     text-align: center;
-    color: red;
-    background-color: antiquewhite;
-    padding: 2%;
-    margin: auto;
-    font-size: 5vh;
-    weight: 100%;
+    background-color: #5e17eb;
+    padding-top: 0.4%;
 }
 a {
     text-decoration: none;
+}
+
+#TANK img {
+    height : 15vh;
 }
 
 
