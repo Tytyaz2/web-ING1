@@ -6,7 +6,6 @@ include "php/haut.inc.php";
 if (!isset($_GET["forminscription"])) {
     include "php/page_connexion.inc.php";
 }
-
 //corps de la page avec l'affichage des produits si on cllique dessus sur le menu
 //si on est sur le formulaire d'inscritpion
 if (isset($_GET["forminscription"])){
@@ -57,4 +56,3 @@ else {
 //copyright
 include "php/copyright.inc.php";
 ?>
-
