@@ -8,12 +8,12 @@
     border-radius: 10px;
     margin: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Ajoute ombre */
-    width: 20%; /* Largeur cellule */
+    width: 20%;
     margin-left: 5vw ;
     margin-right: 5vw ;
     margin-top: 10vh;
     position: relative;
-    overflow: hidden; /* Garde tout contenu interne bien rangé */
+    overflow: hidden;
 }
 
 .zoom-img {

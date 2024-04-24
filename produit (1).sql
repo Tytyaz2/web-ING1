@@ -11,7 +11,6 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -47,11 +46,11 @@ INSERT INTO `produit` (`id`, `nom`, `prix`, `stock`, `description`, `type`) VALU
 (3, 'MacPomme Normal', 800, 20, 'Un MacPomme classique, RAS.', 'Ordinateur'),
 (4, 'MacPomme Pro -', 900, 15, 'Un MacPomme Pro plus petit, Rentrant dans tout les sacs!', 'Ordinateur'),
 (5, 'MacPomme Pro Max²', 1700, 5, 'Un MacPomme Pro Max mais au carré!!', 'Ordinateur'),
-(6, 'IPomme 24', 1000, 17, 'IPomme de dernière génération! ', 'Telephone'),
-(7, 'IPomme 105 Pro Max +', 1050, 35, 'Un IPomme pour les gagnants, uniquement en vert #0A3633', 'Telephone'),
-(8, 'IPomme 86', 860, 33, 'IPomme réservé pour les anciens', 'Telephone'),
-(9, 'IPomme 51', 510, 65, 'IPomme avec 30 bon cotés mais 35 cotés négatifs', 'Telephone'),
-(10, 'PommePad 12', 1000, 18, '12 ème génération des PommePad', 'Telephone'),
+(6, 'BièreBleue1', 1000, 17, 'IPomme de dernière génération! ', 'Telephone'),
+(7, 'BièreBleue2', 1050, 35, 'Un IPomme pour les gagnants, uniquement en vert #0A3633', 'Telephone'),
+(8, 'BièreBleue3', 860, 33, 'IPomme réservé pour les anciens', 'Telephone'),
+(9, 'OceanOil', 510, 65, 'IPomme avec 30 bon cotés mais 35 cotés négatifs', 'Telephone'),
+(10, 'RomeAroma', 1000, 18, '12 ème génération des PommePad', 'Telephone'),
 (11, 'Roulette Pomme', 700, 5, 'Roulette pour le MacPomme Pro Max +', 'Accessoires'),
 (12, 'AirPomme 1', 140, 40, 'Ecouteurs sans fil première génération!', 'Accessoires'),
 (13, 'AirPomme 2 Pro', 600, 20, 'Il a le même nom que nos écouteurs mais c\'est bien un casque!', 'Accessoires'),
