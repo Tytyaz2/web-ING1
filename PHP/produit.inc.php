@@ -14,8 +14,8 @@
 
                 while($row = $resultat->fetch(PDO::FETCH_ASSOC)) {
                     echo "<div class='zoom-container'>
-                    <img class='zoom-img' src='/IMAGE/".$row["nom"].".jpg' alt='".$row["nom"]."' style='height:180px; width:240px'>
-                    <div class='text-container'>".$row["nom"]." - ".$row["prix"]."€<br>".$row["description"]."<br>Stock: ".$row["stock"]."</div>
+                    <img class='zoom-img' src='/IMAGE/".$row["nom"].".png' alt='".$row["nom"]."'>
+                    <div class='text-container'>".$row["nom"]." - ".$row["prix"]."€<br>".$row["description"]."</div>
                     </div>";
                 }
             } else {
