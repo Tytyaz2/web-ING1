@@ -9,8 +9,11 @@ session_start();
         foreach ($data as $user) {
             if ($user['email'] === $email || $user['username'] === $email) {
                 $found = true;
-                if (password_verify($password, $user['password'])) {
+                if ($password === $user['password']) {
                     $_SESSION['username'] = $user['username'];
+                    if ($user['status'] === "admin"){
+                        $_SESSION['status'] = "admin";
+                    }
                     header("Location: ../index.php");
                 } else {
                     header("Location: ../index.php?error=motdepasseincorrect");

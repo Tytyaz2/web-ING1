@@ -13,20 +13,38 @@
 
             if ($resultat->rowCount() > 0) {
 
-                while($row = $resultat->fetch(PDO::FETCH_ASSOC)) {
-                    echo "<div class='produit'>
-                            <div class='zoom-container'>
-                                <img class='zoom-img' src='/IMAGE/".$row["nom"].".png' alt='".$row["nom"]."'>
-                                <div class='text-container'>".$row["nom"]." - ".$row["prix"]."€<br>".$row["description"]."</div>
-                            </div>";
-                    echo '  <div class="panier"> 
-                                <input type="number" id="quantity_'.$row["id"].'" name="quantity_'.$row["id"].'" min="1" value="1" style="width: 30px; margin-left: 20px">
-                                <button onclick="decreaseQuantity('.$row["id"].')">-</button>
-                                <button onclick="increaseQuantity('.$row["id"].')">+</button>
-                                <button onclick="addToCart('.$row["id"].')">Ajouter au panier</button>
-                            </div>
-                         </div>';
+                if ($_SESSION["status"] === "admin" ){
+                    while($row = $resultat->fetch(PDO::FETCH_ASSOC)) {
+                        echo "<div class='produit'>
+                                <div class='zoom-container'>
+                                    <img class='zoom-img' src='/IMAGE/".$row["nom"].".png' alt='".$row["nom"]."'>
+                                    <div class='text-container'>".$row["nom"]." - ".$row["prix"]."€<br>".$row["description"]."<br>Stock: ".$row["stock"]."</div>
+                                </div>";
+                        echo "  <div class='panier'> 
+                                <form action='/PHP/SavePanier.php' method='post'>
+                                Article : <input type='text' name = 'str' value = '".$row["nom"]."' ><br>
+                                Stock : <input type='number' name='nbrarticles' value ='1' min='1' max='".$row["stock"]."'><br> 
+                                    <input type='submit' value = 'Ajouter au panier'></form></td>
+                                </div>
+                             </div>";
 
+                    }
+                }else{
+                    while($row = $resultat->fetch(PDO::FETCH_ASSOC)) {
+                        echo "<div class='produit'>
+                                <div class='zoom-container'>
+                                    <img class='zoom-img' src='/IMAGE/".$row["nom"].".png' alt='".$row["nom"]."'>
+                                    <div class='text-container'>".$row["nom"]." - ".$row["prix"]."€<br>".$row["description"]."</div>
+                                </div>";
+                        echo "  <div class='panier'> 
+                                <form action='/PHP/SavePanier.php' method='post'>
+                                Article : <input type='text' name = 'str' value = '".$row["nom"]."' ><br>
+                                Stock : <input type='number' name='nbrarticles' value ='1' min='1' max='".$row["stock"]."'><br> 
+                                    <input type='submit' value = 'Ajouter au panier'></form></td>
+                                </div>
+                             </div>";
+
+                    }
                 }
             } else {
                 echo "Aucun résultat trouvé";
