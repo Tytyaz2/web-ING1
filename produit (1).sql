@@ -41,21 +41,21 @@ CREATE TABLE IF NOT EXISTS `produit` (
 --
 
 INSERT INTO `produit` (`id`, `nom`, `prix`, `stock`, `description`, `type`) VALUES
-(1, 'MacPomme Pro Max + ', 1500, 12, 'Un pc de fou!!', 'Ordinateur'),
-(2, 'MacPomme pro', 1000, 11, 'Un peut moins bien que le MacPomme Pro mais toujours cool!', 'Ordinateur'),
-(3, 'MacPomme Normal', 800, 20, 'Un MacPomme classique, RAS.', 'Ordinateur'),
-(4, 'MacPomme Pro -', 900, 15, 'Un MacPomme Pro plus petit, Rentrant dans tout les sacs!', 'Ordinateur'),
-(5, 'MacPomme Pro Max²', 1700, 5, 'Un MacPomme Pro Max mais au carré!!', 'Ordinateur'),
-(6, 'BièreBleue1', 1000, 17, 'IPomme de dernière génération! ', 'Telephone'),
-(7, 'BièreBleue2', 1050, 35, 'Un IPomme pour les gagnants, uniquement en vert #0A3633', 'Telephone'),
-(8, 'BièreBleue3', 860, 33, 'IPomme réservé pour les anciens', 'Telephone'),
-(9, 'OceanOil', 510, 65, 'IPomme avec 30 bon cotés mais 35 cotés négatifs', 'Telephone'),
-(10, 'RomeAroma', 1000, 18, '12 ème génération des PommePad', 'Telephone'),
-(11, 'Roulette Pomme', 700, 5, 'Roulette pour le MacPomme Pro Max +', 'Accessoires'),
-(12, 'AirPomme 1', 140, 40, 'Ecouteurs sans fil première génération!', 'Accessoires'),
-(13, 'AirPomme 2 Pro', 600, 20, 'Il a le même nom que nos écouteurs mais c\'est bien un casque!', 'Accessoires'),
-(14, 'Pomme de pin', 10, 21, 'Une Pomme de pin produite dans nos laboratoires experts dans le domaine. ', 'Accessoires'),
-(15, 'Chargeur', 30, 58, 'Chargeur pour vos appareils Pomme!', 'Accessoires');
+(1, 'Pinky Promise', 1500, 12, 'Un pc de fou!!', 'Rose'),
+(2, 'Spicy Sip', 1000, 11, 'Un peut moins bien que le MacPomme Pro mais toujours cool!', 'Rose'),
+(3, 'Crazy Craft', 800, 20, 'Un MacPomme classique, RAS.', 'Rose'),
+(4, 'Cherry Cheers', 900, 15, 'Un MacPomme Pro plus petit, Rentrant dans tout les sacs!', 'Rose'),
+(5, 'Berlin Booze', 1700, 5, 'Un MacPomme Pro Max mais au carré!!', 'Rose'),
+(6, 'Fresh Foam', 1000, 17, 'IPomme de dernière génération! ', 'Bleue'),
+(7, 'Drowned Drink', 1050, 35, 'Un IPomme pour les gagnants, uniquement en vert #0A3633', 'Bleue'),
+(8, 'Calm Cup', 860, 33, 'IPomme réservé pour les anciens', 'Bleue'),
+(9, 'OceanOil', 510, 65, 'IPomme avec 30 bon cotés mais 35 cotés négatifs', 'Bleue'),
+(10, 'RomeAroma', 1000, 18, '12 ème génération des PommePad', 'Bleue'),
+(11, 'Bestial Beverage', 700, 5, 'Roulette pour le MacPomme Pro Max +', 'Verte'),
+(12, 'Wild Wheat', 140, 40, 'Ecouteurs sans fil première génération!', 'Verte'),
+(13, 'Guilty Glass', 600, 20, 'Il a le même nom que nos écouteurs mais c\'est bien un casque!', 'Verte'),
+(14, 'Jungle Jar', 10, 21, 'Une Pomme de pin produite dans nos laboratoires experts dans le domaine. ', 'Verte'),
+(15, 'Lagos Lager', 30, 58, 'Chargeur pour vos appareils Pomme!', 'Verte');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
