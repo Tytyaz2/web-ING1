@@ -23,15 +23,15 @@ if (!isset($_GET["forminscription"])) {
 }
 //corps de la page avec l'affichage des produits si on cllique dessus sur le menu
 //si on est sur le formulaire d'inscritpion
-else if (isset($_GET["forminscription"])){
+if (isset($_GET["forminscription"])){
     //menu pour changer la page
     include "php/menu.inc.php";
     include "php/page_inscription.inc.php";
 }
 //retour d'un mail de contact comme quoi le mail est bien envoyé
 elseif (isset($_GET["mailenvoye"])){
-    echo "<p>Votre demande a bien été envoyé</p>";
-        echo "<form action='index.php'><input type='submit' value='accueil'></form>";
+    echo "<p style='text-align: center'>Votre demande a bien été envoyé</p>";
+        echo "<form style='text-align: center' action='index.php'><input type='submit' value='accueil'></form>";
 
 }
 //page de contact
