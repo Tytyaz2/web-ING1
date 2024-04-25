@@ -2,7 +2,7 @@
 $file = fopen("data/Panier.csv", "r") or die ("Unable to open file"); //on ouvre le fichier panier
 $price = 0;
 $nbrproduit = 0;
-echo "<link rel='stylesheet' href='../CSS/panier.css'><table id='tablepanier'>";
+echo "<table style='margin-top:100px'>";
 
 while (!feof($file)) {
     $line = fgets($file);
@@ -25,5 +25,19 @@ while (!feof($file)) {
                         
     }
 echo "</table>";
-echo "<br><p id='article'>Vous avez ".$nbrproduit." article dans votre panier.<br>Somme totale = ".$price."€<p>"; //affiche le nombre d'articles et le prix total hors taxe
+echo "<br><p>Vous avez ".$nbrproduit." article dans votre panier.<br>Somme totale = ".$price."€<p>"; //affiche le nombre d'articles et le prix total hors taxe
+echo "<br><p>Voulez-vous valider votre panier ?<p>";
+echo '<form method="post">
+    <input type="submit" name="bouton" value="Cliquez ici">
+    </form>';
+
+    if(isset($_POST['bouton'])) {
+        // Afficher une alerte JavaScript
+        echo "<script>alert('Votre pannier est validé !!');</script>";
+        
+        // Rediriger vers une autre page après 3 secondes
+        echo "<script>setTimeout(function(){ window.location.href = '../index.php'; }, 1);</script>";
+    }
+    
+
 ?>

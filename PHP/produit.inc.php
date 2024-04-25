@@ -23,7 +23,7 @@
                         echo "  <div class='panier'> 
                                 <form action='/PHP/SavePanier.php' method='post'>
                                 Article : <input type='text' name = 'str' value = '".$row["nom"]."' ><br>
-                                Stock : <input type='number' name='nbrarticles' value ='1' min='1' max='".$row["stock"]."'><br> 
+                                Quantité voulue : <input type='number' name='nbrarticles' value ='1' min='1' max='".$row["stock"]."'><br> 
                                     <input type='submit' value = 'Ajouter au panier'></form></td>
                                 </div>
                              </div>";
@@ -39,7 +39,7 @@
                         echo "  <div class='panier'> 
                                 <form action='/PHP/SavePanier.php' method='post'>
                                 Article : <input type='text' name = 'str' value = '".$row["nom"]."' ><br>
-                                Stock : <input type='number' name='nbrarticles' value ='1' min='1' max='".$row["stock"]."'><br> 
+                                Quantité voulue : <input type='number' name='nbrarticles' value ='1' min='1' max='".$row["stock"]."'><br> 
                                     <input type='submit' value = 'Ajouter au panier'></form></td>
                                 </div>
                              </div>";
