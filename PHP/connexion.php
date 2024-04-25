@@ -9,7 +9,7 @@ session_start();
         foreach ($data as $user) {
             if ($user['email'] === $email || $user['username'] === $email) {
                 $found = true;
-                if ($password === $user['password']) {
+                if (password_verify($password, $user['password'])) {
                     $_SESSION['username'] = $user['username'];
                     if ($user['status'] === "admin"){
                         $_SESSION['status'] = "admin";
@@ -21,7 +21,7 @@ session_start();
                 exit;
             }
         }
-        header("Location: ../page_inscription.inc.php?error=mailexistepas");
+        header("Location: ../index.php?error=mailexistepas&forminscription");
         exit;
     }
 ?>

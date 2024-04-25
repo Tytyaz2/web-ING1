@@ -23,7 +23,7 @@ if (!isset($_GET["forminscription"])) {
 }
 //corps de la page avec l'affichage des produits si on cllique dessus sur le menu
 //si on est sur le formulaire d'inscritpion
-if (isset($_GET["forminscription"])){
+else if (isset($_GET["forminscription"])){
     //menu pour changer la page
     include "php/menu.inc.php";
     include "php/page_inscription.inc.php";

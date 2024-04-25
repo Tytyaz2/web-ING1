@@ -33,10 +33,10 @@ echo '<form method="post">
 
     if(isset($_POST['bouton'])) {
         // Afficher une alerte JavaScript
-        echo "<script>alert('Votre pannier est validé !!');</script>";
+        echo "<script>alert('Votre panier est validé !!');</script>";
         
         // Rediriger vers une autre page après 3 secondes
-        echo "<script>setTimeout(function(){ window.location.href = '../index.php'; }, 1);</script>";
+        echo "<script>setTimeout(function(){ window.location.href = '../web-ING2/index.php'; }, 1);</script>";
     }
     
 

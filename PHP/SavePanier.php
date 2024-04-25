@@ -2,7 +2,7 @@
 session_start();
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <body>
     
 
@@ -29,7 +29,7 @@ session_start();
                 
                 fclose($file2);
 
-                header('Location: ../index.php');    
+                header('Location: ../web-ING2/index.php');
     
                 $dbh = null;
                 }catch (PDOException $e) {
