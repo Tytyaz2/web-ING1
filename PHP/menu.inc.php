@@ -12,7 +12,7 @@
                     $nomType = $type['type'];
                     echo "<a class ='bouton_menu' id='$nomType' href='index.php?categorie=" . urlencode($nomType) . "'>" . htmlspecialchars($nomType) . "</a>";
                 }
-                echo "<a class ='bouton_menu' href='index.php?panier'>Panier</a>";
+                echo "<a class ='bouton_menu' id = 'panier' href='index.php?panier'>Panier</a>";
             } else {
                 echo "Aucun type trouvé.";
             }

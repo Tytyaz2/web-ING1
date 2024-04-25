@@ -2,7 +2,7 @@
 #menu {
     background: rgb(218,242,220);
     float :left;
-    height: 92vh;
+    height: 89vh;
     width: 10em;
 
 }
@@ -104,6 +104,25 @@
     background-color: white;
 }
 
+#panier {
+    margin-top: 20%;
+    border: 2px solid transparent;
+    width: 5em;
+    padding: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: rgb(218,242,220);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+#panier:hover,
+#panier:focus {
+    border: 2px solid rgb(	180, 229, 184);
+    box-shadow: 0px 0px 0px 7px rgb(218,242,220, 50%);
+    background-color: white;
+}
+
 .menu-cache {
     display: none;
     background-color: #007bff;
@@ -200,3 +219,4 @@
 .btn:active .icon {
     transform: scale(0.85);
 }
+

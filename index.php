@@ -1,7 +1,6 @@
 <?php
 //la session est initialisé dedans
 include "php/haut.inc.php";
-session_start();
 //element de connexion
 //la page connexion apparait pas quand on est sur la page inscription
 

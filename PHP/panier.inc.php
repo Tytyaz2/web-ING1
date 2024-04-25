@@ -2,7 +2,7 @@
 $file = fopen("data/Panier.csv", "r") or die ("Unable to open file"); //on ouvre le fichier panier
 $price = 0;
 $nbrproduit = 0;
-echo "<table style='margin-top:100px'>";
+echo "<link rel='stylesheet' href='../CSS/panier.css'><table id='tablepanier'>";
 
 while (!feof($file)) {
     $line = fgets($file);
@@ -25,5 +25,5 @@ while (!feof($file)) {
                         
     }
 echo "</table>";
-echo "<br><p>Vous avez ".$nbrproduit." article dans votre panier.<br>Somme totale = ".$price."€<p>"; //affiche le nombre d'articles et le prix total hors taxe
+echo "<br><p id='article'>Vous avez ".$nbrproduit." article dans votre panier.<br>Somme totale = ".$price."€<p>"; //affiche le nombre d'articles et le prix total hors taxe
 ?>
