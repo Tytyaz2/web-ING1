@@ -2,7 +2,7 @@
 #menu {
     background: rgb(218,242,220);
     float :left;
-    height: 80vh;
+    height: 92vh;
     width: 10em;
 
 }
@@ -22,7 +22,7 @@
     border: 2px solid rgb(	180, 229, 184);
 }
 
-#Telephone {
+#Bleue {
     margin-top: 20%;
     border: 2px solid transparent;
     width: 5em;
@@ -36,14 +36,14 @@
 }
 
 
-#Telephone:hover,
-#Telephone:focus {
+#Bleue:hover,
+#Bleue:focus {
     border: 2px solid rgb(	180, 229, 184);
     box-shadow: 0px 0px 0px 7px rgb(218,242,220, 50%);
     background-color: white;
 }
 
-#Ordinateur {
+#Rose {
     margin-top: 90%;
     border: 2px solid transparent;
     width: 5em;
@@ -57,14 +57,14 @@
 }
 
 
-#Ordinateur:hover,
-#Ordinateur:focus {
+#Rose:hover,
+#Rose:focus {
     border: 2px solid rgb(	180, 229, 184);
     box-shadow: 0px 0px 0px 7px rgb(218,242,220, 50%);
     background-color: white;
 }
 
-#Accessoires {
+#Verte {
     margin-top: 20%;
     border: 2px solid transparent;
     width: 5em;
@@ -78,8 +78,8 @@
 }
 
 
-#Accessoires:hover,
-#Accessoires:focus {
+#Verte:hover,
+#Verte:focus {
     border: 2px solid rgb(	180, 229, 184);
     box-shadow: 0px 0px 0px 7px rgb(218,242,220, 50%);
     background-color: white;

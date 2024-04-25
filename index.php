@@ -42,8 +42,8 @@ else if (!isset($_GET["categorie"])){
         </button>
         <div id="menu1" class="menu-cache">
             <a href="index.php?categorie=Rose">Rose</a>
-            <a href="index.php?categorie=bleu">Bleu</a>
-            <a href="index.php?categorie=verte">Verte</a>
+            <a href="index.php?categorie=Bleue">Bleue</a>
+            <a href="index.php?categorie=Verte">Verte</a>
         </div>';
     include "php/page_bienvenue.inc.php";
 }

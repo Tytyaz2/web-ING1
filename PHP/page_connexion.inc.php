@@ -13,10 +13,10 @@
             include "form_connexion.inc.php";
         }
     } else {
-        echo $_SESSION["username"];
+        echo "<link rel='stylesheet' href='../CSS/deconnexion.css'><div id='deconnexion'>".$_SESSION["username"];
         echo '<form method="post" action="PHP/deconnection.php">
-            <input type="submit" name="logout" value="Déconnexion">
-        </form>';
+            <input type="submit" name="logout" id="submit_deconnexion" value="Déconnexion">
+        </form></div>';
     }
     ?>
 
