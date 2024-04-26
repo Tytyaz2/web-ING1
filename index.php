@@ -3,6 +3,21 @@
 include "php/haut.inc.php";
 //element de connexion
 //la page connexion apparait pas quand on est sur la page inscription
+
+if(!isset($_SESSION['status'])){
+    $_SESSION['status'] = "nothing";
+}
+
+if(!isset($_SESSION['fichier_supprime'])){
+    $_SESSION['fichier_supprime'] = true;
+    $_SESSION["panier"] = 0;
+    $fichier = fopen("data/Panier.csv", "w") or die ("Unable to open file");
+    if (fwrite($fichier, "") === false) {
+        die("Impossible de vider le contenu du fichier.");
+    }
+    fclose($fichier);
+}
+
 if (!isset($_GET["forminscription"])) {
     include "php/page_connexion.inc.php";
 }
@@ -15,8 +30,8 @@ if (isset($_GET["forminscription"])){
 }
 //retour d'un mail de contact comme quoi le mail est bien envoyé
 elseif (isset($_GET["mailenvoye"])){
-    echo "<p>Votre demande a bien été envoyé</p>";
-        echo "<form action='index.php'><input type='submit' value='accueil'></form>";
+    echo "<p style='text-align: center'>Votre demande a bien été envoyé</p>";
+        echo "<form style='text-align: center' action='index.php'><input type='submit' value='accueil'></form>";
 
 }
 //page de contact
@@ -25,6 +40,13 @@ else if (isset($_GET["contact"])){
     include "php/menu.inc.php";
     include "php/contact.inc.php";
 }
+else if (isset($_GET["panier"])){
+    //menu pour changer la page
+    include "php/menu.inc.php";
+    include "php/panier.inc.php";
+}
+
+
 //page de bienvenue
 else if (!isset($_GET["categorie"])){
     //menu pour changer la page
@@ -42,8 +64,9 @@ else if (!isset($_GET["categorie"])){
         </button>
         <div id="menu1" class="menu-cache">
             <a href="index.php?categorie=Rose">Rose</a>
-            <a href="index.php?categorie=bleu">Bleu</a>
+            <a href="index.php?categorie=Bleue">Bleue</a>
             <a href="index.php?categorie=verte">Verte</a>
+            <a href="index.php?panier">Panier</a>
         </div>';
     include "php/page_bienvenue.inc.php";
 }

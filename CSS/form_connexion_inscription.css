@@ -1,3 +1,7 @@
+#error{
+    float: right;
+}
+
 #connexion {
     float: right;
     display: flex;

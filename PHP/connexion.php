@@ -11,6 +11,9 @@ session_start();
                 $found = true;
                 if (password_verify($password, $user['password'])) {
                     $_SESSION['username'] = $user['username'];
+                    if ($user['status'] === "admin"){
+                        $_SESSION['status'] = "admin";
+                    }
                     header("Location: ../index.php");
                 } else {
                     header("Location: ../index.php?error=motdepasseincorrect");
@@ -18,7 +21,7 @@ session_start();
                 exit;
             }
         }
-        header("Location: ../page_inscription.inc.php?error=mailexistepas");
+        header("Location: ../index.php?error=mailexistepas&forminscription");
         exit;
     }
 ?>

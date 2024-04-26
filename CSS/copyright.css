@@ -1,0 +1,9 @@
+#copy {
+    background-color: #5e17eb;
+    text-align: center;
+    z-index: 9;
+    bottom: 15px;
+    height: 3vh;
+    position: relative;
+    clear: both;
+}

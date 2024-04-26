@@ -1,10 +1,11 @@
-
+#divcontact {
+    text-align: center;
+}
 .invalid {
     border: 1px solid red;
 }
 
 #CONTACT {
-    text-align: left;
     font-family : Helvetica, sans-serif;
     color: black;
     background-color: transparent;
