@@ -1,6 +1,9 @@
 
 body {
-    margin: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100vh;
 }
 #TANK {
     text-align: center;

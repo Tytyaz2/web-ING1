@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="../CSS/validation_contact.css">
 <script src="../JS/validation_contact.js"></script>
-<h2 id="CONTACT"> Nous contacter</h2>
+<div id="divcontact"><h2 id="CONTACT"> Nous contacter</h2>
 <?php
 
 if (isset($_GET['error']) && $_GET['error'] == 'formcontactinvalide'):
@@ -101,5 +101,5 @@ endif;
     <button type="submit">Envoyer</button>
     <br>
 </form>
-
+</div>
 

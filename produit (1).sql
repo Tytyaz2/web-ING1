@@ -41,21 +41,21 @@ CREATE TABLE IF NOT EXISTS `produit` (
 --
 
 INSERT INTO `produit` (`id`, `nom`, `prix`, `stock`, `description`, `type`) VALUES
-(1, 'MacPomme Pro Max + ', 1500, 12, 'Un pc de fou!!', 'Ordinateur'),
-(2, 'MacPomme pro', 1000, 11, 'Un peut moins bien que le MacPomme Pro mais toujours cool!', 'Ordinateur'),
-(3, 'MacPomme Normal', 800, 20, 'Un MacPomme classique, RAS.', 'Ordinateur'),
-(4, 'MacPomme Pro -', 900, 15, 'Un MacPomme Pro plus petit, Rentrant dans tout les sacs!', 'Ordinateur'),
-(5, 'MacPomme Pro Max²', 1700, 5, 'Un MacPomme Pro Max mais au carré!!', 'Ordinateur'),
-(6, 'BièreBleue1', 1000, 17, 'IPomme de dernière génération! ', 'Telephone'),
-(7, 'BièreBleue2', 1050, 35, 'Un IPomme pour les gagnants, uniquement en vert #0A3633', 'Telephone'),
-(8, 'BièreBleue3', 860, 33, 'IPomme réservé pour les anciens', 'Telephone'),
-(9, 'OceanOil', 510, 65, 'IPomme avec 30 bon cotés mais 35 cotés négatifs', 'Telephone'),
-(10, 'RomeAroma', 1000, 18, '12 ème génération des PommePad', 'Telephone'),
-(11, 'Roulette Pomme', 700, 5, 'Roulette pour le MacPomme Pro Max +', 'Accessoires'),
-(12, 'AirPomme 1', 140, 40, 'Ecouteurs sans fil première génération!', 'Accessoires'),
-(13, 'AirPomme 2 Pro', 600, 20, 'Il a le même nom que nos écouteurs mais c\'est bien un casque!', 'Accessoires'),
-(14, 'Pomme de pin', 10, 21, 'Une Pomme de pin produite dans nos laboratoires experts dans le domaine. ', 'Accessoires'),
-(15, 'Chargeur', 30, 58, 'Chargeur pour vos appareils Pomme!', 'Accessoires');
+(1, 'Pinky Promise', 1500, 12, 'Cette bière vous promettra une nuit folle (mais ça reste entre vous)', 'Rose'),
+(2, 'Spicy Sip', 1000, 11, 'Une bière qui vous réserve de piquantes surprises', 'Rose'),
+(3, 'Crazy Craft', 800, 20, 'Une bière dont la confection artisanale rendra vos soirées géniales', 'Rose'),
+(4, 'Cherry Cheers', 900, 15, 'Son goût aux cerises titillera vos papilles', 'Rose'),
+(5, 'Berlin Booze', 1700, 5, 'Cette bière saura vous faire penser aux sempiternelles soirées de Berlin', 'Rose'),
+(6, 'Fresh Foam', 1000, 17, 'La fraicheur de cette bière égale même les eaux les plus pures', 'Bleue'),
+(7, 'Drowned Drink', 1050, 35, 'Laissez vous noyer sous une avalanche de saveurs', 'Bleue'),
+(8, 'Calm Cup', 860, 33, 'De quoi passer un moment des plus agréables', 'Bleue'),
+(9, 'OceanOil', 510, 65, 'Une bière à consommer sur la plage... ou en plein milieu des océans', 'Bleue'),
+(10, 'RomeAroma', 1000, 18, 'Une bière qui vous rappelera le calme des rues de Rome, la ville éternelle', 'Bleue'),
+(11, 'Bestial Beverage', 700, 5, 'Une bière qui fera de vous une bête', 'Verte'),
+(12, 'Wild Wheat', 140, 40, 'Une bière qui ravivera vos instincts les plus sauvages', 'Verte'),
+(13, 'Guilty Glass', 600, 20, 'Ne vous sentez pas coupable de ne boire plus que ça', 'Verte'),
+(14, 'Jungle Jar', 10, 21, 'Les instincts de la jungle surgiront de cette bière', 'Verte'),
+(15, 'Lagos Lager', 30, 58, 'La boire vous fera vous sentir dans les rues de la belle Lagos', 'Verte');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

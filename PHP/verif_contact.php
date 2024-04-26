@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Envoi de l'e-mail
         if ($mail->send()) {
-            header("Location: ../index.php?mailenvoye");
+            header("Location: ../../web-ING2/index.php?mailenvoye");
             exit();
         } else {
             echo 'Erreur lors de l\'envoi de l\'e-mail : ' . $mail->ErrorInfo;

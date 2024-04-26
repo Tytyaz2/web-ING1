@@ -3,32 +3,32 @@
     text-align: center;
     position: relative;
     width: 100%;
-    z-index: 1;
-    height: auto; /* Ajustez la hauteur selon vos besoins */
+    z-index: 2;
+    height: auto;
     overflow: hidden;
 }
 
 .biere-blonde, .biere-brune, .biere-blanche {
     position: absolute;
-    width: 140px; /* ajustez la taille selon vos besoins */
-    height: 525px; /* ajustez la taille selon vos besoins */
+    width: 140px;
+    height: 525px;
 }
 
 .biere-blonde {
-    top: 100px; /* ajustez la position selon vos besoins */
-    left: 320px; /* ajustez la position selon vos besoins */
+    top: 100px;
+    left: 320px;
 
 }
 
 .biere-brune {
-    top: 100px; /* ajustez la position selon vos besoins */
-    left: 580px; /* ajustez la position selon vos besoins */
+    top: 100px;
+    left: 580px;
 
 }
 
 .biere-blanche {
-    top: 100px; /* ajustez la position selon vos besoins */
-    left: 830px; /* ajustez la position selon vos besoins */
+    top: 100px;
+    left: 830px;
 
 }
 
@@ -48,12 +48,11 @@
     width: 100%;
     height: auto;
     display: block;
-    object-fit: cover; /* Assure que l'image couvre toute la zone */
+    object-fit: cover;
 }
 
 .biere-blonde,
 .biere-brune,
 .biere-blanche {
     position: absolute;
-    /* Ajoutez les styles supplémentaires pour les liens si nécessaire */
 }
