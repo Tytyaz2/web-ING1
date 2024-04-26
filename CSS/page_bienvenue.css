@@ -15,20 +15,25 @@
 }
 
 .biere-blonde {
-    top: 100px;
-    left: 320px;
+    top: 20vh;
+    height: 60vh;
+    width: 25vw;
+    left: 10vw;
 
 }
 
 .biere-brune {
-    top: 100px;
-    left: 580px;
-
+    top: 20vh;
+    height: 60vh;
+    width: 25vw;
+    left: 40vw;
 }
 
 .biere-blanche {
-    top: 100px;
-    left: 830px;
+    top: 20vh;
+    height: 60vh;
+    width: 25vw;
+    left: 70vw;
 
 }
 

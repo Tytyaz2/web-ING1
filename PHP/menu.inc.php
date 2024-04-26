@@ -38,6 +38,7 @@
             <a href="index.php?categorie=Bleue">Bleue</a>
             <a href="index.php?categorie=Verte">Verte</a>
             <a href="index.php?panier">Panier</a>
+            <a href="index.php?contact">Contact</a>
             
             
             
