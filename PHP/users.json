@@ -10,5 +10,10 @@
         "username": "Epsi574",
         "password": "$2y$10$FOgjw0GilRGYv1qQ7fafZuo9TgcY7faxlKRHJj3IHKCbQ.4bFFve6",
         "status": "admin"
+    },
+    {
+        "email": "HUGORIVIERRE@YAHOO.FR",
+        "username": "HUGO",
+        "password": "$2y$10$EedN8N05mTrt3WJfbqjcCOqI80Ca8no3XKnkDj9LrTmAg112e4N5i"
     }
 ]

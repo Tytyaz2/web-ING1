@@ -1,5 +1,6 @@
 #error{
-    float: right;
+    margin-top: 6vh;
+    color: white;
 }
 
 #connexion {
@@ -7,6 +8,7 @@
     display: flex;
     margin-top: -6vh;
     width: 37vw;
+
 }
 
 #connexion p {

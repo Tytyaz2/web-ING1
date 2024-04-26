@@ -34,6 +34,11 @@ elseif (isset($_GET["mailenvoye"])){
         echo "<form style='text-align: center' action='index.php'><input type='submit' value='accueil'></form>";
 
 }
+else if (isset($_GET['error']) && $_GET['error'] == 'password') {
+    include "php/menu.inc.php";
+    echo "<p>les mots de passe ne sont pas identiques.</p>";
+    include "PHP/form_inscription.inc.php";
+}
 //page de contact
 else if (isset($_GET["contact"])){
     //menu pour changer la page
@@ -67,6 +72,7 @@ else if (!isset($_GET["categorie"])){
             <a href="index.php?categorie=Bleue">Bleue</a>
             <a href="index.php?categorie=verte">Verte</a>
             <a href="index.php?panier">Panier</a>
+            <a href="index.php?contact">Contact</a>
         </div>';
     include "php/page_bienvenue.inc.php";
 }

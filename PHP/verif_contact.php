@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Paramètres de l'e-mail
         $mail->setFrom('tankpomme9@gmail.com', 'pommestore');
-        $mail->addAddress('soares.flavio2002@gmail.com', 'Mr Martins soares');
+        $mail->addAddress('gabrielbrossat@gmail.com', 'Mr Brossat');
         $mail->Subject = $sujet;
         $mail->Body = $nom ." ". $prenom . " né le " . $dateN . " exerçant le métier de ".$metier." souhaite prendre contact avec vous le ". $date_contact . " en vous transmettant le message suivant : ".$message;
 
